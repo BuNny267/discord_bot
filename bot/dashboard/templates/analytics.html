@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h2>Analytics</h2><canvas id='modChart'></canvas>{% endblock %}{% block scripts %}<script>fetch('/analytics/summary').then(r=>r.json()).then(d=>{new Chart(document.getElementById('modChart'),{type:'line',data:{labels:d.moderation.map(x=>x.d),datasets:[{label:'Moderation',data:d.moderation.map(x=>x.c)}]}});});</script>{% endblock %}
