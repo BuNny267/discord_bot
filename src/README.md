@@ -1,17 +1,15 @@
-# Moderation Dashboard (Node.js / Discord.js v14)
+# Discord Moderation Dashboard (Restarted Node.js Build)
 
-This Node.js implementation provides an interaction-first moderation dashboard with:
+This repo has been reset from the old Python layout and restarted as a Node.js Discord.js v14 bot.
 
-- `/automod`
-- `/logs`
-- `/moderation`
-- `/config`
-- `/security`
+## Slash Commands
+- /automod
+- /logs
+- /moderation
+- /config
+- /security
 
-And interactive workflows via buttons, select menus, and modals.
-
-## Run
-
+## Setup
 ```bash
 npm install
 cp .env.example .env
